@@ -21,9 +21,7 @@ Our Programs </span>
 
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {programs.map((program) => {
-        const imageUrl = program?.image?.[0]?.url
-          ? `${import.meta.env.VITE_STRAPI_URL}${program.image[0].url}`
-          : "";
+   const imageUrl = program?.image?.[0]?.url || "";
 
         return (
           <div

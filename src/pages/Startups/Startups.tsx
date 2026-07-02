@@ -19,10 +19,7 @@ export default function Startups() {
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {startups.map((startup) => {
-            const logoUrl = startup?.logo?.url
-              ? `${import.meta.env.VITE_STRAPI_URL}${startup.logo.url}`
-              : "";
-
+            const logoUrl = startup?.logo?.url || "";
             return (
               <div
                 key={startup.id}

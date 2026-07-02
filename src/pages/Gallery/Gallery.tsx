@@ -48,7 +48,7 @@ export default function Gallery() {
 
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {item.images?.map((image: any) => {
-                const imageUrl = `${import.meta.env.VITE_STRAPI_URL}${image.url}`;
+                const imageUrl = image.url;
 
                 return (
                   <div

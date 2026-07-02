@@ -31,10 +31,7 @@ return ( <section className="bg-background py-24"> <div className="container-cus
     {/* Team Members */}
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {members.map((member) => {
-        const imageUrl = member?.photo?.[0]?.url
-          ? `${import.meta.env.VITE_STRAPI_URL}${member.photo[0].url}`
-          : "";
-
+        const imageUrl = member?.photo?.[0]?.url || "";
         return (
           <div
             key={member.id}

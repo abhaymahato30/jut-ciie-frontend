@@ -14,13 +14,9 @@ Loading... </div>
 );
 }
 
-const heroImage = about?.heroImage?.url
-? `${import.meta.env.VITE_STRAPI_URL}${about.heroImage.url}`
-: "";
+const heroImage = about?.heroImage?.url || "";
 
-const aboutImage = about?.aboutImage?.url
-? `${import.meta.env.VITE_STRAPI_URL}${about.aboutImage.url}`
-: "";
+const aboutImage = about?.aboutImage?.url || "";
 
 const getRichText = (content: any) => {
 if (!content?.length) return "";

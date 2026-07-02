@@ -49,10 +49,7 @@ return (
     <div className="container-custom px-6">
       <div className="space-y-24">
         {programs.map((program, index) => {
-          const imageUrl = program?.image?.[0]?.url
-            ? `${import.meta.env.VITE_STRAPI_URL}${program.image[0].url}`
-            : "";
-
+          const imageUrl = program?.image?.[0]?.url || "";
           return (
             <div
               key={program.id}

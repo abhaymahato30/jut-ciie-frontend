@@ -20,10 +20,7 @@ export default function StartupPreview({
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {startups.slice(0, 3).map((startup) => {
-            const logoUrl =
-  startup?.logo?.url
-    ? `${import.meta.env.VITE_STRAPI_URL}${startup.logo.url}`
-    : "";
+            const logoUrl = startup?.logo?.url || "";
 
             return (
               <div
