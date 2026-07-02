@@ -42,9 +42,9 @@ className="h-[75vh] md:h-[85vh]"
 >
 {slides?.map((slide) => ( <SwiperSlide key={slide.id}> <div className="relative h-full overflow-hidden">
 <img
-src={`${import.meta.env.VITE_STRAPI_URL}${slide.image?.url}`}
-alt={slide.title}
-className="absolute inset-0 h-full w-full object-cover"
+  src={slide.image?.url}
+  alt={slide.title}
+  className="absolute inset-0 h-full w-full object-cover"
 />
 
 
