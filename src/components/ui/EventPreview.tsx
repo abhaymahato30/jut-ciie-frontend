@@ -21,10 +21,7 @@ export default function EventPreview({
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {events.slice(0, 3).map((event) => {
             const imageUrl =
-              event?.image?.[0]?.url
-                ? `${import.meta.env.VITE_STRAPI_URL}${event.image[0].url}`
-                : "";
-
+  event?.image?.[0]?.url || "";
             return (
               <div
                 key={event.id}
