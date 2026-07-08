@@ -48,7 +48,7 @@ return ( <div className="bg-background">
 
     <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
       <div className="max-w-3xl">
-        <h1 className="font-heading text-4xl text-white md:text-6xl">
+        <h1 className="font-heading text-4xl !text-white md:text-6xl">
           {about.heroTitle}
         </h1>
 
@@ -97,8 +97,8 @@ return ( <div className="bg-background">
     <div className="container-custom px-6">
       <div className="grid gap-8 md:grid-cols-2">
 
-        <div className="rounded-3xl bg-primary p-8 text-white">
-          <h3 className="font-heading text-3xl">
+        <div className="rounded-3xl bg-primary p-8 !text-white">
+          <h3 className="font-heading text-3xl !text-white">
             Vision
           </h3>
 
@@ -186,7 +186,7 @@ return ( <div className="bg-background">
   {/* CTA */}
   <section className="bg-primary py-20 text-center text-white">
     <div className="container-custom px-6">
-      <h2 className="font-heading text-4xl">
+      <h2 className="font-heading text-4xl !text-white">
         {about.ctaTitle}
       </h2>
 

@@ -11,7 +11,7 @@ return (
 
 
     <div className="relative z-10 px-6 text-center text-white">
-      <h1 className="font-heading text-5xl md:text-6xl">
+      <h1 className="font-heading text-5xl md:text-6xl !text-white">
         Our Programs
       </h1>
 

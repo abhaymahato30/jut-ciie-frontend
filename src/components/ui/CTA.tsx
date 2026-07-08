@@ -8,7 +8,7 @@ export default function CTA() {
             Join The Innovation Ecosystem
           </span>
 
-          <h2 className="font-heading mt-4 text-4xl text-white md:text-5xl">
+          <h2 className="font-heading mt-4 text-4xl !text-white md:text-5xl">
             Transform Your Idea Into Impact
           </h2>
 
