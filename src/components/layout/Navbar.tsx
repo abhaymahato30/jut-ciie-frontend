@@ -88,12 +88,15 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <Link
-            to="/apply"
-            className="hidden rounded-md bg-accent px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:opacity-90 lg:block"
-          >
-            Apply Now
-          </Link>
+        <a
+  href="https://docs.google.com/forms/d/e/1FAIpQLSdaYphIdX5mOPPv009jw6_z6FMbDZUqgwwiHkgyuVj2LrEhPw/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setIsOpen(false)}
+  className="mt-4 rounded-lg bg-accent px-4 py-3 text-center font-semibold text-white transition hover:opacity-90"
+>
+  Apply Now
+</a>
 
           {/* Mobile Menu Button */}
           <button
@@ -143,13 +146,15 @@ export default function Navbar() {
               </NavLink>
             ))}
 
-            <Link
-              to="/apply"
-              onClick={() => setIsOpen(false)}
-              className="mt-4 rounded-lg bg-accent px-4 py-3 text-center font-semibold text-white transition hover:opacity-90"
-            >
-              Apply Now
-            </Link>
+          <a
+  href="https://docs.google.com/forms/d/e/1FAIpQLSdaYphIdX5mOPPv009jw6_z6FMbDZUqgwwiHkgyuVj2LrEhPw/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setIsOpen(false)}
+  className="mt-4 rounded-lg bg-accent px-4 py-3 text-center font-semibold text-white transition hover:opacity-90"
+>
+  Apply Now
+</a>
           </div>
         </div>
       )}
