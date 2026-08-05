@@ -93,7 +93,7 @@ export default function Navbar() {
   target="_blank"
   rel="noopener noreferrer"
   onClick={() => setIsOpen(false)}
-  className="mt-4 rounded-lg bg-accent px-4 py-3 text-center font-semibold text-white transition hover:opacity-90"
+  className="mt-4 rounded-lg bg-accent px-4 py-2 text-center font-semibold text-white transition hover:opacity-90"
 >
   Apply Now
 </a>
@@ -151,7 +151,7 @@ export default function Navbar() {
   target="_blank"
   rel="noopener noreferrer"
   onClick={() => setIsOpen(false)}
-  className="mt-4 rounded-lg bg-accent px-4 py-3 text-center font-semibold text-white transition hover:opacity-90"
+  className="mt-4 rounded-lg bg-accent px-4 py-2 text-center font-semibold text-white transition hover:opacity-90"
 >
   Apply Now
 </a>
