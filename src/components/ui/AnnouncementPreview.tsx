@@ -24,9 +24,7 @@ Latest Announcements </span>
 
     <div className="overflow-hidden rounded-2xl bg-white shadow-lg">
       {announcements.slice(0, 5).map((announcement, index) => {
-        const pdfUrl = announcement?.noticePDF?.url
-          ? `${import.meta.env.VITE_STRAPI_URL}${announcement.noticePDF.url}`
-          : "";
+        const pdfUrl = announcement?.noticePDF?.url || "";
 
         return (
           <div
