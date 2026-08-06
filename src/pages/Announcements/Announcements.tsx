@@ -7,7 +7,7 @@ export default function Announcements() {
   useEffect(() => {
     getAnnouncements().then(setAnnouncements);
   }, []);
-  console.log(announcement.noticePDF);
+  
 
   return (
     <section className="bg-background py-24">
@@ -24,10 +24,7 @@ export default function Announcements() {
 
         <div className="space-y-8">
           {announcements.map((announcement) => {
-            const pdfUrl =
-              announcement?.noticePDF?.url
-                ? `${import.meta.env.VITE_STRAPI_URL}${announcement.noticePDF.url}`
-                : "";
+            const pdfUrl = announcement?.noticePDF?.url || "";
 
             return (
               <div
