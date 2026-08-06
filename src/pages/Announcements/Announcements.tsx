@@ -7,6 +7,7 @@ export default function Announcements() {
   useEffect(() => {
     getAnnouncements().then(setAnnouncements);
   }, []);
+  console.log(announcement.noticePDF);
 
   return (
     <section className="bg-background py-24">
