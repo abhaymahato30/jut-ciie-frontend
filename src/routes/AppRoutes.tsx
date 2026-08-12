@@ -12,6 +12,8 @@ import Gallery from "../pages/Gallery/Gallery";
 import Team from "../pages/Team/Team";
 import Contact from "../pages/Contact/Contact";
 import Apply from "../pages/Apply/Apply";
+import LabsPage from "../pages/LabPage";
+
 
 export const router = createBrowserRouter([
 {
@@ -22,6 +24,7 @@ children: [
 
 
   { path: "about", element: <About /> },
+  { path: "labs", element: <LabsPage /> },
 
   { path: "announcements", element: <Announcements /> },
 

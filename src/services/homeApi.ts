@@ -1,5 +1,6 @@
 import API from "./api";
 
+
 export const getHomePage = async () => {
   const response = await API.get("/homepage?populate=*");
   return response.data.data;
@@ -74,4 +75,13 @@ const response = await API.get(
 );
 
 return response.data.data;
+};
+
+
+export const getLabs = async () => {
+  const response = await API.get(
+    "/labs?populate=*&sort=name:asc"
+  );
+
+  return response.data.data;
 };
