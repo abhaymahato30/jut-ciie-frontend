@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* Center Content */}
           <div className="flex-1 px-4 text-center">
             <h1 className="font-heading text-lg font-bold text-primary md:text-3xl">
-              Centre for Innovation, Incubation & Entrepreneurship
+              Center for Innovation, Incubation & Entrepreneurship
             </h1>
 
             <p className="mt-1 text-xs text-gray-600 md:text-base">
